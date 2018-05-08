@@ -42,7 +42,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to RNLearning!</Text>
         <Text onPress={() => this.toToast()} style={styles.instructions}>
-          来自原生初始化传值[routerType]：{this.props.routerType}，点我弹出测试
+          来自原生初始化传值[routerType]：{this.props.routerType}，点我弹出测试!
         </Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>

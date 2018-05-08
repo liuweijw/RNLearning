@@ -5,6 +5,7 @@
  * which takes the following parameters:
  *
  * 1. String message: A string with the text to toast
+ *
  * 2. int duration: The duration of the toast. May be ToastAndroid.SHORT or ToastAndroid.LONG
  */
 var { NativeModules } = require('react-native')
