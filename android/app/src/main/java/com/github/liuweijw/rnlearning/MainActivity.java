@@ -85,15 +85,6 @@ public class MainActivity extends ReactActivity implements DefaultHardwareBackBt
                 .emit(eventName, params);
     }
 
-    /**
-     * Returns the name of the main component registered from JavaScript.
-     * This is used to schedule rendering of the component.
-     */
-    @Override
-    protected String getMainComponentName() {
-        return RN_MODULE_NAME;
-    }
-
     @Override
     protected void onPause() {
         super.onPause();
@@ -127,9 +118,11 @@ public class MainActivity extends ReactActivity implements DefaultHardwareBackBt
 
     @Override
     public void onBackPressed() {
-        if (mReactInstanceManager != null)
+        if (mReactInstanceManager != null){
             mReactInstanceManager.onBackPressed();
-        super.onBackPressed();
+        } else {
+            super.onBackPressed();
+        }
     }
 
     @Override

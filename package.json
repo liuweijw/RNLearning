@@ -7,12 +7,12 @@
     "test": "jest",
     "lint": "eslint --ext .js src --fix",
     "build:android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
-    "bundle:ios": "react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle"
+    "build:ios": "react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle"
   },
   "dependencies": {
     "react": "16.3.2",
-    "react-native": "0.55.3",
-    "react-navigation": "^1.5.11",
+    "react-native": "0.55.4",
+    "react-navigation": "^2.0.1",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-persist": "^5.9.1"
