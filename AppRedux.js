@@ -1,8 +1,6 @@
 
 import React, { Component } from 'react'
-import { Platform, StyleSheet, Text, View } from 'react-native'
-// 原生模块提供的方法
-import RnToast from './src/module/RnToast'
+import { View, Text, Platform, StyleSheet } from 'react-native'
 
 const instructions = Platform.select({
   ios: 'IOS System',
@@ -28,24 +26,25 @@ const styles = StyleSheet.create({
   }
 })
 
-export default class App extends Component {
+class ReduxRoute extends Component {
   constructor(props) {
     super(props)
   }
 
-  toToast() {
-    RnToast.show('Test Toast', RnToast.LONG)
+  componentWillMount() {
+  }
+
+  componentDidMount() {
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to RNLearning!</Text>
-        <Text onPress={() => this.toToast()} style={styles.instructions}>
-          来自原生初始化传值[routerType]：{this.props.routerType}，点我弹出测试!
-        </Text>
+        <Text style={styles.welcome}>Welcome to RNLearning DEFAULT!</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     )
   }
 }
+
+export default ReduxRoute

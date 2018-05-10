@@ -2,7 +2,7 @@
 const initialState = {
   userInfo: {
     name: 'liuweijw',
-    gender: 'man'
+    gender: '女'
   }
 }
 

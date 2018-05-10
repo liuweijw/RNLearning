@@ -13,6 +13,9 @@ import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
 
+  public static final String JS_MAIN_MODULE_NAME = "index"; // index.andorid
+  public static final String JS_MAIN_MODULE_BUNDLE_NAME = "index.android.bundle"; // index.andorid
+
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
     @Override
     public boolean getUseDeveloperSupport() {
@@ -29,7 +32,8 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected String getJSMainModuleName() {
-      return super.getJSMainModuleName();
+      return JS_MAIN_MODULE_NAME;
+      // return super.getJSMainModuleName();
     }
   };
 

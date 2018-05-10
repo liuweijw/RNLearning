@@ -4,11 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
+import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.common.LifecycleState;
@@ -54,8 +56,8 @@ public class MainActivity extends ReactActivity implements DefaultHardwareBackBt
         mReactInstanceManager = ReactInstanceManager.builder()
                 .setApplication(getApplication())
                 .setCurrentActivity(this)
-                .setBundleAssetName("index.android.bundle")
-                .setJSMainModulePath("index.android")
+                .setBundleAssetName(MainApplication.JS_MAIN_MODULE_BUNDLE_NAME)
+                .setJSMainModulePath(MainApplication.JS_MAIN_MODULE_NAME)
                 .addPackage(new MainReactPackage())
                 .addPackage(new MyReactPackage())
                 .setInitialLifecycleState(mLifecycleState)
@@ -66,6 +68,7 @@ public class MainActivity extends ReactActivity implements DefaultHardwareBackBt
         mReactRootView.startReactApplication(mReactInstanceManager,RN_MODULE_NAME,bundle);
 
         // 模拟 Android 主动向ReactJs 发送消息
+        // Ios 支持不是特别好，暂时取消这种方式
         /*new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -77,13 +80,13 @@ public class MainActivity extends ReactActivity implements DefaultHardwareBackBt
         }, 1000);*/
     }
 
-    private void sendEvent(ReactContext reactContext,
+    /*private void sendEvent(ReactContext reactContext,
                            String eventName,
                            @Nullable WritableMap params) {
         reactContext
                 .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
                 .emit(eventName, params);
-    }
+    }*/
 
     @Override
     protected void onPause() {

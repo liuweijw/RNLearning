@@ -22,6 +22,14 @@ public class FirstActivity extends AppCompatActivity {
         toPageBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+                MainActivity.lunch(FirstActivity.this, "0");
+            }
+        });
+
+        Button toPageBtn1 = findViewById(R.id.to_rn_page_first);
+        toPageBtn1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
                 MainActivity.lunch(FirstActivity.this, "1");
             }
         });
