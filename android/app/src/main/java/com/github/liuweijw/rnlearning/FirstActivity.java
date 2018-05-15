@@ -41,5 +41,13 @@ public class FirstActivity extends AppCompatActivity {
                 MainActivity.lunch(FirstActivity.this, "2");
             }
         });
+
+        Button toPage3Btn = findViewById(R.id.to_rn_page_3);
+        toPage3Btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                MainActivity.lunch(FirstActivity.this, "3");
+            }
+        });
     }
 }

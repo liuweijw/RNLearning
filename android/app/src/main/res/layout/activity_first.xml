@@ -7,7 +7,7 @@
         android:id="@+id/to_rn_page"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_vertical"
         android:text="go to reactnative page" />
 
@@ -15,7 +15,7 @@
         android:id="@+id/to_rn_page_first"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_vertical"
         android:text="go to reactnative page1" />
 
@@ -23,7 +23,15 @@
         android:id="@+id/to_rn_page_orther"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_vertical"
         android:text="go to reactnative page2" />
+
+    <Button
+        android:id="@+id/to_rn_page_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"
+        android:text="go to reactnative page3" />
 </LinearLayout>
