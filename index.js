@@ -7,6 +7,7 @@ import AppRedux from './AppRedux'
 import AppRedux1 from './AppRedux1'
 import AppRedux2 from './AppRedux2'
 import AppRedux3 from './AppRedux3' // 比较复杂的RN界面
+import AppRedux4 from './AppRedux4' // teaset 第三方组件集成
 
 import configureStore from './src/redux/store'
 
@@ -40,6 +41,14 @@ const ReduxApp = bundle => {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <AppRedux3 />
+        </PersistGate>
+      </Provider>
+    )
+  } else if (_key === '4') {
+    return (
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <AppRedux4 />
         </PersistGate>
       </Provider>
     )
