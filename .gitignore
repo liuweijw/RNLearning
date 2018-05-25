@@ -62,8 +62,6 @@ android/build/
 android/app/build/
 *.iml
 local.properties
-*.bundle
-*.bundle.meta
 .settings
 *.classpath
 *.project
