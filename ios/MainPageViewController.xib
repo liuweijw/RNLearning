@@ -52,15 +52,41 @@
                         <action selector="pageviewClick:" destination="-1" eventType="touchUpInside" id="GcH-gn-dgx"/>
                     </connections>
                 </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="996-7w-04N">
+                    <rect key="frame" x="97.5" y="440" width="180" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="QH0-Vl-QYh"/>
+                        <constraint firstAttribute="height" constant="30" id="SRc-fC-5NX"/>
+                    </constraints>
+                    <state key="normal" title="pageviewBtn3"/>
+                    <connections>
+                        <action selector="pageviewClick:" destination="-1" eventType="touchUpInside" id="DNc-fA-QuE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KA-XP-lBa">
+                    <rect key="frame" x="97.5" y="520" width="180" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="4gf-oF-PdL"/>
+                        <constraint firstAttribute="height" constant="30" id="L5d-t2-YV8"/>
+                    </constraints>
+                    <state key="normal" title="pageviewBtn4"/>
+                    <connections>
+                        <action selector="pageviewClick:" destination="-1" eventType="touchUpInside" id="d5g-1f-fPp"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="996-7w-04N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Erz-6c-DqY"/>
+                <constraint firstItem="996-7w-04N" firstAttribute="top" secondItem="xfq-ze-eVp" secondAttribute="bottom" constant="50" id="Fuj-hk-dbr"/>
                 <constraint firstItem="h0w-dV-fdz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="MJO-0t-ltk"/>
+                <constraint firstItem="1KA-XP-lBa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xp7-F1-xxw"/>
                 <constraint firstItem="xfq-ze-eVp" firstAttribute="top" secondItem="Hem-yY-RXN" secondAttribute="bottom" constant="50" id="bbB-Dd-Rd2"/>
                 <constraint firstItem="h0w-dV-fdz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dSs-RW-hP1"/>
                 <constraint firstItem="Hem-yY-RXN" firstAttribute="top" secondItem="h0w-dV-fdz" secondAttribute="bottom" constant="50" id="eri-yk-lq0"/>
                 <constraint firstItem="Hem-yY-RXN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="flz-A0-HLR"/>
                 <constraint firstItem="xfq-ze-eVp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qJv-CR-cqt"/>
+                <constraint firstItem="1KA-XP-lBa" firstAttribute="top" secondItem="996-7w-04N" secondAttribute="bottom" constant="50" id="zQq-Jj-d8c"/>
             </constraints>
             <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>

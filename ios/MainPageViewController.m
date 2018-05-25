@@ -26,8 +26,6 @@
 
 - (IBAction)pageviewClick:(id)sender {
   
-  
-  
   UIButton * abtn = (UIButton *)sender;
   NSURL *jsCodeLocation;
   NSDictionary *props = @{@"routerType" : [NSString stringWithFormat:@"%ld",(long)abtn.tag]};

@@ -22,7 +22,7 @@
   rootView.view.frame= rect;
   UINavigationController *navViewController = [[UINavigationController alloc] initWithRootViewController:rootView];
   
-//  [navViewController setNavigationBarHidden:YES];
+  [navViewController setNavigationBarHidden:YES];
   self.window.rootViewController = navViewController;
   [self.window makeKeyAndVisible];
 
